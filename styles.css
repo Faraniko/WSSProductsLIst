@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    /*ფერები*/
+
+    background-color: #222;
+    padding: 50px;
+}
+
+#Main_Div{
+    height: 100%;
+    width: 100%;
+    max-width: 1080px;
+    min-width: 400px;
+}
+
+.Header{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://images.pexels.com/photos/2267909/pexels-photo-2267909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header h1 {
+    color: #fff;
+    font-size: 10vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Header h1:hover{
+    color: #ff7300;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.input_placeholder{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Search{
+    margin: 10px;
+    padding: 20px;
+    height: 40px;
+    width: 50%;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    transition: 0.5s;
+    min-width: 250px;
+}
+
+#Search:hover{
+    border: 1px solid #ff7300;
+}
+
+::placeholder{
+    color: #fff;
+    opacity: 0.6;
+}
+
+.images_placeholder{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.Cards{
+    cursor: pointer;
+    border: 1px solid #a3a3a3;
+    border-radius: 20px;
+    padding: 40px 20px 10px 20px;
+}
+
+.Cards:hover{
+    cursor: pointer;
+    border: 1px solid #ff7300;
+    border-radius: 20px;
+}
+
+
+.images_placeholder img{
+    width: 300px;
+    height: 200px;
+}
+
+.code{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.Hiden{
+    display:none;
+}
+
+@media screen and (max-width: 500px){
+
+    body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    
+        /*ფერები*/
+    
+        background-color: #222;
+        padding: 0;
+    }
+    
+    #Main_Div{
+        height: 100%;
+        width: 100%;
+        max-width: 1080px;
+        min-width: 0px;
+    }
+    
+    .Header{
+        width: 100%;
+        height: auto;
+        background-image: none;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .images_placeholder img{
+        width: 250px;
+        height: 150px;
+    }
+    .Cards{
+        cursor: pointer;
+        border: 1px solid #a3a3a3;
+        border-radius: 20px;
+        padding: 40px 10px 10px 10px;
+    }
+}
